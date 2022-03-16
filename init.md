@@ -23,7 +23,7 @@
     -   cat ~/.ssh/id_rsa.pub
     -   Copy it into Github SSH Key
     -   ssh -T git@github.com
-    -   sample)sudo git clone git@github.com:PanJiaChen/vue-element-admin
+    -   sample)git clone git@github.com:nice2h/tanzu-demo
 -   Docker Compose
     -   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     -   sudo chmod +x /usr/local/bin/docker-compose
@@ -38,11 +38,11 @@
     -   Access to public IP address:8080
     -   docker exec -it nginx bash
     -   .conf location is /etc/nginx/conf.d/default.conf
-    -   ### :TODO default.conf をローカルファイルで置き換え
--   PHP
-    -   ### コンテナ作って nginx との組み合わせ
 -   Local
-    -   ### dockerfile & php 環境作成
-    -   ### Git Push
+    -   ssh-keygen -t rsa -b 4096
+    -   cat ~/.ssh/id_rsa.pub
+    -   Copy it into Github SSH Key
+    -   ssh -T git@github.com
+    -   sample)git clone git@github.com:nice2h/tanzu-demo
 -   Github Action
-    -   ### Github Commit
+    -   m
