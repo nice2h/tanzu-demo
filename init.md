@@ -1,0 +1,42 @@
+-   AWS
+    -   Ref : https://dev.classmethod.jp/articles/creation_vpc_ec2_for_beginner_1/
+        -   VPC creation
+        -   Subnet creation on VPC
+        -   Internet Gateway Creation then attach it on VPC
+        -   Route Table Creation and associate Subnet
+    -   Ref : https://dev.classmethod.jp/articles/creation_vpc_ec2_for_beginner_2/
+        -   Security Group Creation
+        -   EC2 Creation
+        -   Connect to EC2 with SSH key file
+    -
+-   EC2 on AWS
+    -   sudo yum update -y
+    -   sudo yum -y install docker
+    -   sudo yum -y install git
+    -   sudo systemctl start docker
+    -   sudo systemctl enable docker
+    -   sudo docker run hello-world
+-   Github
+    -   Ref: https://qiita.com/konshun_pr$$ogram/items/c41c62f465368f0b0152
+    -   ssh-keygen -t rsa -b 4096
+    -   cat ~/.ssh/id_rsa.pub
+    -   Copy it into Github SSH Key
+    -   ssh -T git@github.com
+    -   sample)sudo git clone git@github.com:PanJiaChen/vue-element-admin
+-   Nginx
+    -   Ref :https://zenn.dev/supersatton/articles/e49d8cb942091e
+    -   sudo docker pull nginx
+    -   sudo docker images
+    -   sudo docker run --name nginx01 -d -p 8080:80 nginx
+    -   sudo docker ps
+    -   Access to public IP address:8080
+    -   docker exec -it nginx bash
+    -   .conf location is /etc/nginx/conf.d/default.conf
+    -   ### :TODO default.conf をローカルファイルで置き換え
+-   PHP
+    -   ### コンテナ作って nginx との組み合わせ
+-   Local
+    -   ### dockerfile & php 環境作成
+    -   ### Git Push
+-   Github Action
+    -   ### Github Commit
