@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "php-cs-fixer.rules": "@PSR2",
+    "php-cs-fixer.formatHtml": true,
+    "php-cs-fixer.onsave": true
+}

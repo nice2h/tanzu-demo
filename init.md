@@ -8,6 +8,7 @@
         -   Security Group Creation
         -   EC2 Creation
         -   Connect to EC2 with SSH key file
+            -   Sample : ssh -i "tanzu.pem" ec2-user@52.196.43.132
     -
 -   EC2 on AWS
     -   sudo yum update -y
@@ -23,6 +24,11 @@
     -   Copy it into Github SSH Key
     -   ssh -T git@github.com
     -   sample)sudo git clone git@github.com:PanJiaChen/vue-element-admin
+-   Docker Compose
+    -   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    -   sudo chmod +x /usr/local/bin/docker-compose
+    -   sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+    -   docker-compose --version
 -   Nginx
     -   Ref :https://zenn.dev/supersatton/articles/e49d8cb942091e
     -   sudo docker pull nginx
