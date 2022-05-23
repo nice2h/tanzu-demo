@@ -35,6 +35,7 @@
   - sudo chmod +x /usr/local/bin/docker-compose
   - sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
   - docker-compose --version
+  - docker-compose up -d
 - Nginx
   - Ref :https://zenn.dev/supersatton/articles/e49d8cb942091e
   - sudo docker pull nginx

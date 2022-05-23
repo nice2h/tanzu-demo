@@ -50,5 +50,4 @@
       - Github レポジトリで、Github Action を書く
       - Pull Request から Merge を実行
       - パブリック IP にアクセスして変更が体感できるか
-    - IaC 体験
     - k8s / Tanzu 振り返り
