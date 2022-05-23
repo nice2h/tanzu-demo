@@ -1,11 +1,16 @@
 name: EC2 auto deploy
 
+permissions: write-all
+
+
 on:
  pull_request:
    branches: [ main ]
    types: [closed]
 
  workflow_dispatch:
+
+
 
 jobs:
  build:
