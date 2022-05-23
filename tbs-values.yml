@@ -1,0 +1,6 @@
+---
+kp_default_repository: "nice2h/tbs"
+kp_default_repository_username: "nice2h"
+kp_default_repository_password: "Carrefour1982"
+pull_from_kp_default_repo: true
+ca_cert_data: <CA_CERT_CONTENTS>

@@ -1,0 +1,54 @@
+- Day1 Summary(3 名 1 組)
+  - Workstation でも Cloud でもいいので、Web+PHP+DB+FTP(1VM で OK) 環境を作る: 2hours
+    - Web(Apache or Nginx)
+    - PHP(Version)
+    - OS(Windows?Ubuntu?CentOS)
+    - DB(mysql?postgre?SQLserver?)
+    - ローカルでコード書く（FTP で同期？本番直接編集？）
+  - プログラミング体験: 1hours
+    - コード編集が反映されるのを体験（同期後に本番環境で確認）
+    - リンクの実装
+    - フォームの配置
+    - GET/POST によるデータ入力内容が次ページにも表示
+    - データベースへの接続（サンプルコード準備）
+  - セキュリティ上注意点 : 15min
+    - クロスサイトスクリプティング
+    - SQL インジェクション
+  - チーム開発体験（3 名 1 組で分担して実施）: 3hours
+    - トップページ兼データ在庫一覧確認ページ、フォーム（商品名、個数）、送信完了ページ
+    - 追加：商品名で検索機能、ページイメージの統一（タイトル）
+    - チーム発表
+- Day2 Summary
+  - ローカルで開発環境構築
+    - VScode インストール
+    - コンテナ体験 1hours
+      - コンテナ紹介
+      - Docker Desktop インストール
+      - Docker でコンテナ起動テスト
+    - Github 体験 30min
+      - Github 紹介
+      - Github 接続セットアップ
+      - Github から tanzu-demo を Pull
+    - Docker Compose 体験 30min
+      - Docker Compose インストール
+      - Docker Compose 起動テスト
+    - Github グループ編集体験 30min
+      - info.php を編集して Github へ Push + Pull Request 作成
+      - 中島)Pull Request Merge
+      - Merge されたものをさらに Pull してローカルで Merge→ 動作確認
+      - Github レポジトリ作成
+      - 別ディレクトリに移動して、git clone→git push 自分のレポジトリへアップロード
+    - AWS 環境体験 1hour
+      - VPC/Subnet/IGW/RouteTable/SecurityGroup 作成
+      - EC2 作成・Docker・Git・Docker Compose インストール
+      - EC2 からの Github 接続セットアップ
+      - EC2 で 自分のレポジトリから、main ブランチを Pull
+      - Docker Compose でコンテナ環境起動
+      - パブリック IP からアクセスして確認できるか
+    - CI/CD 体験 1hour
+      - https://note.com/ryoppei/n/nf2bf7ee78b0b
+      - Github レポジトリで、Github Action を書く
+      - Pull Request から Merge を実行
+      - パブリック IP にアクセスして変更が体感できるか
+    - IaC 体験
+    - k8s / Tanzu 振り返り
