@@ -33,8 +33,8 @@ jobs:
      - name: AWS set Credentials
        uses: aws-actions/configure-aws-credentials@v1
        with:
-         aws-access-key-id: ASIA55TKLWKE5NX6R6GW
-         aws-secret-access-key: POH/+25Cwkh/TR/VksWskWmMdXeaW++3XZLLcvBm
+         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
          aws-region: ap-northeast-1
 
      # デプロイする
