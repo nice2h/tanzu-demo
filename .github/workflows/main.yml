@@ -24,4 +24,3 @@ jobs:
          echo "${{ secrets.EC2_PRIVATE_KEY }}" > private_key
          chmod 600 private_key
          ssh -o StrictHostKeyChecking=no -i private_key ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} "cd /home/ec2-user/playground/tanzu-demo && git pull"
-         # ssh -oStrictHostKeyChecking=no ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} -i private_key "cd /home/ec2-user/playground/tanzu-demo && git checkout main && git pull"
