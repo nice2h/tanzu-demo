@@ -1,4 +1,4 @@
-- Day1 Summary(3 名 1 組)
+- Day1 Summary
   - Workstation でも Cloud でもいいので、Web+PHP+DB+FTP(1VM で OK) 環境を作る: 2hours
     - Web(Apache or Nginx)
     - PHP(Version)

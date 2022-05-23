@@ -3,7 +3,7 @@
     <title>sample</title>
   </head>
   <body>
-    <a href="./info.php">Link To Info.php</a>
+    <a href="./info.php">HyperLink To Info.php</a>
     <form method="GET" action="done.php">
       <input type="text" name="text" />
       <input type="submit">
