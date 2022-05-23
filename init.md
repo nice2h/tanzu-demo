@@ -1,48 +1,73 @@
--   AWS
-    -   Ref : https://dev.classmethod.jp/articles/creation_vpc_ec2_for_beginner_1/
-        -   VPC creation
-        -   Subnet creation on VPC
-        -   Internet Gateway Creation then attach it on VPC
-        -   Route Table Creation and associate Subnet
-    -   Ref : https://dev.classmethod.jp/articles/creation_vpc_ec2_for_beginner_2/
-        -   Security Group Creation
-        -   EC2 Creation
-        -   Connect to EC2 with SSH key file
-            -   Sample : ssh -i "tanzu.pem" ec2-user@52.196.43.132
-    -
--   EC2 on AWS
-    -   sudo yum update -y
-    -   sudo yum -y install docker
-    -   sudo yum -y install git
-    -   sudo systemctl start docker
-    -   sudo systemctl enable docker
-    -   sudo docker run hello-world
--   Github
-    -   Ref: https://qiita.com/konshun_pr$$ogram/items/c41c62f465368f0b0152
-    -   ssh-keygen -t rsa -b 4096
-    -   cat ~/.ssh/id_rsa.pub
-    -   Copy it into Github SSH Key
-    -   ssh -T git@github.com
-    -   sample)sudo git clone git@github.com:PanJiaChen/vue-element-admin
--   Docker Compose
-    -   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-    -   sudo chmod +x /usr/local/bin/docker-compose
-    -   sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-    -   docker-compose --version
--   Nginx
-    -   Ref :https://zenn.dev/supersatton/articles/e49d8cb942091e
-    -   sudo docker pull nginx
-    -   sudo docker images
-    -   sudo docker run --name nginx01 -d -p 8080:80 nginx
-    -   sudo docker ps
-    -   Access to public IP address:8080
-    -   docker exec -it nginx bash
-    -   .conf location is /etc/nginx/conf.d/default.conf
-    -   ### :TODO default.conf をローカルファイルで置き換え
--   PHP
-    -   ### コンテナ作って nginx との組み合わせ
--   Local
-    -   ### dockerfile & php 環境作成
-    -   ### Git Push
--   Github Action
-    -   ### Github Commit
+- Preparation
+
+  - AWS Account Creation
+  - Github Account Creation
+  - Docker / composer?(php) / Docker-composer installation on Mac
+  - VSCode Installation
+
+- AWS
+  - Ref : https://dev.classmethod.jp/articles/creation_vpc_ec2_for_beginner_1/
+    - VPC creation
+    - Subnet creation on VPC
+    - Internet Gateway Creation then attach it on VPC
+    - Route Table Creation and associate Subnet
+  - Ref : https://dev.classmethod.jp/articles/creation_vpc_ec2_for_beginner_2/
+    - Security Group Creation
+    - EC2 Creation
+    - Connect to EC2 with SSH key file
+      - Sample : ssh -i "tanzu.pem" ec2-user@52.196.43.132
+- EC2 on AWS
+  - sudo yum update -y
+  - sudo yum -y install docker
+  - sudo yum -y install git
+  - sudo systemctl start docker
+  - sudo systemctl enable docker
+  - sudo docker run hello-world
+- Github
+  - Ref: https://qiita.com/konshun_pr$$ogram/items/c41c62f465368f0b0152
+  - ssh-keygen -t rsa -b 4096
+  - cat ~/.ssh/id_rsa.pub
+  - Copy it into Github SSH Key
+  - ssh -T git@github.com
+  - sample)git clone git@github.com:nice2h/tanzu-demo
+- Docker Compose
+  - sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  - sudo chmod +x /usr/local/bin/docker-compose
+  - sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+  - docker-compose --version
+- Nginx
+  - Ref :https://zenn.dev/supersatton/articles/e49d8cb942091e
+  - sudo docker pull nginx
+  - sudo docker images
+  - sudo docker run --name nginx01 -d -p 8080:80 nginx
+  - sudo docker ps
+  - Access to public IP address:8080
+  - docker exec -it nginx bash
+  - .conf location is /etc/nginx/conf.d/default.conf
+- Local
+  - ssh-keygen -t rsa -b 4096
+  - cat ~/.ssh/id_rsa.pub
+  - Copy it into Github SSH Key
+  - ssh -T git@github.com
+  - sample)git clone git@github.com:nice2h/tanzu-demo
+- PHP Unit
+  - brew install composer (windows?)
+  - composer install in src folder
+  - vendor/bin/phpunit UserTest.php
+- Github Activities on Local
+  - git init
+  - git add .
+  - git commit -m "First Commit"
+  - git branch -M main
+  - git remote add origin https:.//github.com/{username}/{repositoryName}.git
+  - git push -u origin main
+  - git branch dev
+  - git checkout dev
+  - git add .
+  - git commit -m "Commit in dev"
+  - git push -u origin dev
+  - Github で Pull Request
+  - Github で Merge
+- Github Action
+  - コード編集後に自動的にコードスキャンとデプロイまでしてくれるように。
+  -
