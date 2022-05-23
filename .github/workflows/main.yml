@@ -21,22 +21,6 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v2
 
-     # AWS CLIをインストールする
-     - name: AWS CLI install
-       run: |
-         curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-         unzip awscliv2.zip
-         sudo ./aws/install --update
-         aws --version
-
-     # AWS CLIにキーを設定をする
-     - name: AWS set Credentials
-       uses: aws-actions/configure-aws-credentials@v1
-       with:
-         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         aws-region: ap-northeast-1
-
      # デプロイする
      - name: Deploy
        run: |
