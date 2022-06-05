@@ -1,4 +1,4 @@
-- Preparation
+- Preparations
 
   - AWS Account Creation
   - Github Account Creation
