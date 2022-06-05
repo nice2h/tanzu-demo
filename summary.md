@@ -51,3 +51,4 @@
       - Pull Request から Merge を実行
       - パブリック IP にアクセスして変更が体感できるか
     - k8s / Tanzu 振り返り
+    - 環境削除
