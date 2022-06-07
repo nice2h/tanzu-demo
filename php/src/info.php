@@ -1,4 +1,6 @@
 <?php phpinfo();
-echo 'こんにちは';
+$a = "Hello";
+echo $a;
+echo 'こんにちは'; 
 ?>
 a
