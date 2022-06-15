@@ -1,8 +1,9 @@
 <?php 
-$a = "Hello";
+$a = "Ryosuke";
 echo $a;
-$b = "GoodBye";
+$b = "Takehara";
 echo $b;
 
+
+
 ?>
-a
