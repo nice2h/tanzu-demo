@@ -1,7 +1,7 @@
 <?php 
 $a = "Hello";
 echo $a;
-$b = "GoodBye";
+$b = "Action";
 echo $b;
 echo "ykanai";
 ?>
