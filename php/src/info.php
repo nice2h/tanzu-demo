@@ -6,6 +6,7 @@ $a = "Ryosuke";
 echo $a;
 $b = "Takehara";
 echo $b;
+echo "mmori";
 echo('ykanai');
 echo "this is hshimizu";
 
