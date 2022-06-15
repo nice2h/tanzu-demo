@@ -1,8 +1,7 @@
 <?php 
 $a = "Hello";
 echo $a;
-$b = "GoodBye";
+$b = "GoodBye,rta";
 echo $b;
 
 ?>
-a
