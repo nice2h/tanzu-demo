@@ -4,5 +4,7 @@ echo $a;
 $b = "GoodBye";
 echo $b;
 
+echo "Haruka Amada";
+
 ?>
 a
