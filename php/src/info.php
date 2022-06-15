@@ -1,4 +1,7 @@
 <?php 
+$a = "HelloMmiki";
+echo $a;
+$b = "GoodByeMMiki";
 $a = "Ryosuke";
 echo $a;
 $b = "Takehara";
