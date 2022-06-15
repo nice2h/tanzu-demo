@@ -1,4 +1,8 @@
-<?php phpinfo();
-echo 'こんにちは';
+<?php 
+$a = "I am Yuki Okamoto ";
+echo $ I;
+$b = "I love SAUNA";
+echo $b;
+
 ?>
 a
