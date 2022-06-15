@@ -24,4 +24,6 @@ $c = "Bamba";
 echo $c;
 
 
+echo "Haruka Amada";
+
 ?>
