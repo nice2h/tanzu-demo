@@ -1,10 +1,11 @@
 <?php 
-$a = "Hello";
+$a = "Ryosuke";
 echo $a;
-$b = "GoodBye";
+$b = "Takehara";
 echo $b;
 echo('ykanai');
 echo "this is hshimizu";
 
+
+
 ?>
-a
