@@ -11,6 +11,8 @@ $a = "Ryosuke";
 echo $a;
 $b = "Takehara";
 echo $b;
+$c = "... edit ...";
+echo $c;
 echo ksasahara;
 echo "mmori";
 echo('ykanai');
