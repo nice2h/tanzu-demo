@@ -5,6 +5,6 @@ $b = "GoodBye";
 echo $b;
 echo "mmori";
 echo "action";
-echo "action3";
+echo "action4";
 ?>
 a
