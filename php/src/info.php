@@ -17,4 +17,8 @@ echo "this is hshimizu";
 
 
 
+$c = "Bamba";
+echo $c;
+
+
 ?>
