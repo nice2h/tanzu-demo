@@ -16,6 +16,7 @@ services:
       - ./php/src/:/var/www/html
       - ./php/settings/php.ini:/usr/local/etc/php/php.ini
   mydb:
+    platform: linux/x86_64
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
@@ -28,3 +29,5 @@ services:
       - PMA_HOSTS=mydb
     ports:
       - 8082:80
+
+
