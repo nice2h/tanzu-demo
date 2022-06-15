@@ -30,6 +30,8 @@ echo $c;
 
 echo "Haruka Amada";
 
+echo "yamada";
+
 ?>
 a
 <html>
